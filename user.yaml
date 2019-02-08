@@ -1,0 +1,11 @@
+---
+- hosts: node
+  tasks:
+  - name: Creating User
+    user:
+     name: Praveen
+     state: present
+  - name: Create a file
+    file:
+      path: /home/ubuntu/testing
+      state: touch
